@@ -29,6 +29,9 @@
         background-color: #8ae1c4ad;
 }
 #title{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 250px;
+	text-align: center;
 	text-align: right;
 	font-size: 30px;
 }
