@@ -8,6 +8,26 @@
     overflow: hidden;
     background: #F0F4F3;
 }
+.dot {
+	position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-300%, -150%);
+        height: 290px;
+        width: 290px;
+        border-radius: 180px 180px 180px 180px;
+        background-color: #8ae1c4ad;
+}
+.dot1 {
+	position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-240%, -180%);
+        height: 290px;
+        width: 290px;
+        border-radius: 180px 180px 180px 180px;
+        background-color: #8ae1c4ad;
+}
 form{
 	width: 360px;
 }
