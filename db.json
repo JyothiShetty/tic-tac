@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "Jyothi",
+      "email": "jyothibr@gmail.com",
+      "password": "kshdg",
+      "conPassword": "jhdfhd",
+      "id": 1
+    },
+    {
+      "username": "praj",
+      "email": "praj@gmail.com",
+      "password": "123",
+      "conPassword": "123",
+      "id": 2
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "conPassword": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "email": "praj@gmail.com",
+      "password": "123",
+      "conPassword": "123",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

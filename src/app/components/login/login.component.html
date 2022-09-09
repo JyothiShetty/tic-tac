@@ -7,20 +7,22 @@
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
                     <!-- <img src="../assets/img/profile.svg"> -->
                     <h1 class="title">Welcome Back !</h1>
                     <h4 class="title">Sign In</h4>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is required</span>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
                     </div>
                     <a href="#">Forgot Password?</a>
-                    <input type="submit" class="btn" value="Login">
+                    <input [disabled]="!loginForm.valid" type="submit" class="btn" value="Login">
                 </form>
                 <a style="color:black" routerLink="/register">Don't have an account? <span style="color:#8ae1c4 ;">Sign Up</span></a>
             </div>
