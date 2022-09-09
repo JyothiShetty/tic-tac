@@ -8,6 +8,9 @@
     overflow: hidden;
     background: #F0F4F3;
 }
+input:hover{
+	background-color: #F0F4F3;
+}
 .dot {
 	position: absolute;
         top: 50%;
@@ -29,11 +32,14 @@
         background-color: #8ae1c4ad;
 }
 #title{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	width: 250px;
 	text-align: center;
 	text-align: right;
 	font-size: 30px;
+}
+#title:hover{
+	width: 255px;
 }
 .container{
 	position: fixed;

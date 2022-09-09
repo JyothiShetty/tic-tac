@@ -8,10 +8,6 @@
     overflow: hidden;
     background: #F0F4F3;
 }
-.title{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 40px;
-}
 .dot {
 	position: absolute;
         top: 50%;
@@ -21,6 +17,9 @@
         width: 290px;
         border-radius: 180px 180px 180px 180px;
         background-color: #8ae1c4ad;
+}
+input:hover{
+	background-color: #F0F4F3;
 }
 .dot1 {
 	position: absolute;
@@ -66,4 +65,14 @@ a:hover{
 }
 .btn:hover{
 	background-position: right;
+}
+#title{
+	font-family:ubuntu;
+	width: 250px;
+	text-align: center;
+	text-align: right;
+	font-size: 30px;
+}
+#title:hover{
+	width: 255px;
 }
