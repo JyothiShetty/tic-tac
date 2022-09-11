@@ -24,24 +24,23 @@
                     <div class="row">
                         <div class="col col-md-2 col-lg-2"></div>
                         <div class="col ml-4 col-md-10 col-12 col-lg-10">
-                            <form>
-                                <!-- <img src="../assets/img/profile.svg"> -->
-                                <div class="row mt-5 mb-3">
-                                    <h4 id="title" class="title">Sign In</h4>
-                                </div>  
+                            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                                <!-- <img src="../assets/img/profile.svg">  -->
+                                <h1 class="title">Welcome Back !</h1>
+                                <h4 class="title">Sign In</h4>
+                                <h3 class="text-danger">{{errormsg}}</h3>
                                 <div class="form-group">
-                                    <label class="ml-2" for="exampleInputEmail1">  Email address</label>
-                                    <!-- <i class="fa-solid fa-user"></i> -->
-                                    <input type="email" style="border-radius:15px ;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label for="name">User Name</label>
+                                    <input formControlName="username" type="text" class="form-control" id="name" aria-describedby="usernameHelp">
+                                    <span class="text-danger" *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required','username')">*User Name is required</span>
                                 </div>
                                 <div class="form-group">
-                                    <label class="ml-2" for="exampleInputPassword1">  Password</label>
-                                    <input type="password" style="border-radius:15px ;" class="form-control" id="exampleInputPassword1">
-
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                                    <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
                                 </div>
                                 <a href="#">Forgot Password?</a>
-                                <input type="submit" class="btn" value="Login">
-                                <a style="color:black" routerLink="/register">Don't have an account? <span style="color:#8ae1c4 ;">Sign Up</span></a>
+                                <input [disabled]="!loginForm.valid" type="submit" class="btn" value="Login">
                             </form>
                         </div>
                     </div>
