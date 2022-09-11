@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://tictacsm.pythonanywhere.com/",
+      "secure": false
+    }
+  }
