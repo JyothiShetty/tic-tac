@@ -39,14 +39,11 @@
                                     <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
                                     <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
                                 </div>
-<<<<<<< HEAD
                                 <a href="../dashboard/dashboard.component.html">Forgot Password?</a>
                                 <input type="submit" class="btn" value="Login">
                                 <a style="color:black" routerLink="/register">Don't have an account? <span style="color:#8ae1c4 ;">Sign Up</span></a>
-=======
                                 <a href="#">Forgot Password?</a>
                                 <input [disabled]="!loginForm.valid" type="submit" class="btn" value="Login">
->>>>>>> 46044794b7499d297bd43abbb973be3e6ad608db
                             </form>
                         </div>
                     </div>
