@@ -9,7 +9,7 @@ top: 5px;
 background: #FFFFFF;
 border-radius: 10px;
 } */
-.navbar{
+/* .navbar{
   background-image: linear-gradient(to right ,#8ae1c4, #8ae1c477);
 }
 ul {
@@ -50,4 +50,31 @@ ul {
   }
   #icon{
     padding: 15px;
+  } */
+  .container{
+    position: relative;
   }
+  #upicon{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10.0945px;
+gap: 10.09px;
+
+width: 59.42px;
+height: 59.42px;
+
+background: #8FE1D7;
+border-radius: 50.4724px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+body{
+  background-color: aliceblue;
+  height: 840px;
+}
