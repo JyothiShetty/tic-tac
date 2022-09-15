@@ -1,7 +1,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 <div class="topDev">
-    <!-- <span class="dot"></span>
-    <span class="dot1"></span> -->
+    <span class="dot"></span>
+    <span class="dot1"></span>
+    <div class="row">
+        <div class="col col-md-5 col-lg-5 "></div>
+        <div class="col col-md-6 mt-3 text-center col-lg-6 col-12">
+            <h1 class="title">Welcome Back !</h1>
+        </div>
+    </div>
 
     <div class="">
         <div class="row mt-4 mb-5">
@@ -16,11 +22,10 @@
             <div class="col col-md-6 col-lg-6 col-12">
                 <div class="row mt-2">
                     <div class="col col-md-2 col-lg-2"></div>
-                    <div class="col ml-4 col-md-10 col-12 col-lg-10">
+                    <div class="col p-3 col-md-10 col-12 col-lg-10">
                         <form [formGroup]="loginForm" (ngSubmit)="login()">
                             <!-- <img src="../assets/img/profile.svg">  -->
-                            <h1 class="title">Welcome Back !</h1>
-                            <h4 class="title">Sign In</h4>
+                            <h4 class="title text-center p-3 ">Sign In</h4>
                             <h3 class="text-danger">{{errormsg}}</h3>
                             <div class="form-group">
                                 <label for="name">User Name</label>
@@ -41,17 +46,19 @@
                             <a href="../dashboard/dashboard.component.html">Forgot Password?</a>
 
                             <input [disabled]="!loginForm.valid" type="submit" class="btn" value="Login">
-                        </form>
-                        <a style="color:black" routerLink="/register">Don't have an account? <span
+                            <a style="color:black" routerLink="/register">Don't have an account? <span
                                 style="color:#8ae1c4 ;">Sign Up</span></a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="mb-5"></div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1448 170">
         <path fill="#8ae1c4" fill-opacity="1"
             d="M0,96L48,133.3C96,171,192,245,288,256C384,267,480,213,576,170.7C672,128,768,96,864,74.7C960,53,1056,43,1152,64C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
         </path>
     </svg>
 </div>
+
