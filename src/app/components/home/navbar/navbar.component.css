@@ -88,7 +88,7 @@ border-radius: 10px;
     }
   body{
     background-color: aliceblue;
-    height: 840px;
+    
   }
   /* .bottom{
     position: absolute;
@@ -120,6 +120,30 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   #upper{
     align-items: start;
   }
-  #downer{
-    align-items: baseline;
-  }
+  #bottom-stuff {
+    padding: 0px 30px 30px 30px;
+   
+    position: relative;
+}
+
+#bottom{
+
+    position: absolute; bottom: 0px; 
+}
+.card{
+  width: 850px;
+  height: 500px;
+}
+.card .card-hedder{
+  width: 850px;
+  background-color: aliceblue;
+}
+.card-body{
+  width: 850px;
+  height: 400px;
+}
+.card .card-body img{
+    width: 400px;
+    height: 350px;
+    border-radius: 50px;
+}
