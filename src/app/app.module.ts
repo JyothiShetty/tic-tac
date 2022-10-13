@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import { DashboardComponent } from './components/home/dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './components/home/navbar/navbar.component';
-
+import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
+import { SearchComponent } from './components/dashboard/search/search.component';
+import { ContentComponent } from './components/dashboard/content/content.component';
+import { AddPostComponent } from './components/dashboard/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { NavbarComponent } from './components/home/navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent,
+    ContentComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
